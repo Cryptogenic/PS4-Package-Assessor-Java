@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="mainForm" fx:id="mainForm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="544.0" style="-fx-background-color: #404040;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgAssessor.MainFormXMLController">
+    <children>
+        <Button fx:id="loadPackageBtn" layoutX="393.0" layoutY="52.0" onAction="#handleLoadPackageBtn" prefHeight="104.0" prefWidth="138.0" style="-fx-background-color: MidnightBlue;" text="Load Package File" textFill="WHITE" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <ImageView fitHeight="107.0" fitWidth="229.0" layoutX="12.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Assets/PS4.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="9.0" layoutY="9.0" text="PS4 Package Assessor" textFill="WHITE">
+         <font>
+            <Font name="Caviar Dreams" size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="11.0" layoutY="43.0" prefHeight="5.0" prefWidth="518.0" style="-fx-border-color: #1e90ff;" />
+      <Label layoutX="279.0" layoutY="55.0" text="Credits" textFill="WHITE">
+         <font>
+            <Font name="Caviar Dreams" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="279.0" layoutY="93.0" text="Specter&#10;John&#10;Mr. Smithy X" textFill="DEEPSKYBLUE">
+         <font>
+            <Font name="Caviar Dreams" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="159.0" text="Content ID" textFill="WHITE">
+         <font>
+            <Font name="Caviar Dreams" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="packageContentID" layoutX="14.0" layoutY="184.0" text="-" textFill="DODGERBLUE">
+         <font>
+            <Font name="Caviar Dreams" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="207.0" text="Package Size" textFill="WHITE">
+         <font>
+            <Font name="Caviar Dreams" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="packageSize" layoutX="14.0" layoutY="232.0" text="-" textFill="DODGERBLUE">
+         <font>
+            <Font name="Caviar Dreams" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="packageDataSize" layoutX="14.0" layoutY="280.0" text="-" textFill="DODGERBLUE">
+         <font>
+            <Font name="Caviar Dreams" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="255.0" text="Data Size" textFill="WHITE">
+         <font>
+            <Font name="Caviar Dreams" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="303.0" text="Data Offset" textFill="WHITE">
+         <font>
+            <Font name="Caviar Dreams" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="packageDataOffset" layoutX="14.0" layoutY="328.0" text="-" textFill="DODGERBLUE">
+         <font>
+            <Font name="Caviar Dreams" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="366.0" text="Package Contents" textFill="WHITE">
+         <font>
+            <Font name="Caviar Dreams" size="21.0" />
+         </font>
+      </Label>
+      <ListView fx:id="packageContents" layoutX="14.0" layoutY="397.0" prefHeight="119.0" prefWidth="518.0" />
+      <Label fx:id="magicPkg" layoutX="501.0" layoutY="26.0" text="PKG" textFill="#00ff1a">
+         <font>
+            <Font name="Caviar Dreams" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="magicCnt" layoutX="501.0" layoutY="26.0" text="CNT" textFill="#00d9ff">
+         <font>
+            <Font name="Caviar Dreams" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="469.0" layoutY="6.0" text="Magic:" textFill="WHITE">
+         <font>
+            <Font name="Caviar Dreams" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="magicUnknown" layoutX="431.0" layoutY="26.0" prefHeight="18.0" prefWidth="102.0" text="UNSUPPORTED" textFill="#ff5e00">
+         <font>
+            <Font name="Caviar Dreams" size="15.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
